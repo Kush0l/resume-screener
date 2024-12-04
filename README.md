@@ -7,7 +7,7 @@ activate venv :-
 
 Windows - 
 ```bash  
-.\env\Scripts\activate 
+env\Scripts\activate 
 ```
 mac - 
 ```bash  
