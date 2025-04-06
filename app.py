@@ -101,6 +101,10 @@ Analyze the given resume and job description. Return a fully styled HTML report 
 - Must be clean, professional, and modern in **light mode**.
 - Use white background, black/dark text, blue/green highlights.
 
+## Validation Rule:
+If the resume or job description does not contain enough relevant information (e.g., too short, irrelevant content, missing technical context), respond ONLY with:
+Invalid job description or Resume
+
 ## Sample layout style:
 <div style="font-family:'Segoe UI',sans-serif; background-color:#fff; padding:24px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); color:#202124; line-height:1.6;">
 
@@ -155,6 +159,7 @@ Analyze the given resume and job description. Return a fully styled HTML report 
 - DO NOT wrap the response in triple backticks or markdown code blocks.
 - ONLY return clean HTML as per the format above.
 - No explanations or text outside the HTML.
+- If any section is not present in the resume like experience, projects, etc. Give <p>Not Found</p> with styling.
 """
 
 
