@@ -51,7 +51,6 @@ def main():
     st.title("📄 Resume Screening & Analysis Tool")
 
     with st.sidebar:
-        st.image("https://source.unsplash.com/400x200/?resume,job")
         st.header("Upload & Analyze Your Resume")
         uploaded_file = st.file_uploader("Upload Resume (PDF/TXT)", type=["pdf", "txt"])
         jd = st.text_area("Paste the Job Description")
