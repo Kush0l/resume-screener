@@ -168,8 +168,6 @@ Invalid job description or Resume
 
             # Show predicted category
             st.success("✅ Analysis Complete!")
-            st.subheader("📌 Predicted Job Category of Resume")
-            st.info(f"**{predicted_category}**")
 
             # Show Gemini analysis
             st.subheader("📊 AI Resume Analysis")
